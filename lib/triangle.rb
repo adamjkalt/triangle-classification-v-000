@@ -16,6 +16,8 @@ end
 
 def kind
   validate_triangle
+  # if self.class != Triangle
+  #       raise TriangleError
   if one == two && two == three
     :equilateral
   elsif one == two || two == three || one == three
