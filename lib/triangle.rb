@@ -15,7 +15,7 @@ end
 # end
 
 def kind
-  validate_triangle
+  # validate_triangle
   if self.class != Triangle
         raise TriangleError
   elsif one == two && two == three
