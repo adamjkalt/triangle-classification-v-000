@@ -10,6 +10,7 @@ end
 
 def validate_triangle
   real_triangle = [(one + two > three), (one + three > two), (two + three > one)]
+  [one, two, three].each {|s| real_triangle << false if s <= 0}
 end
 
 def kind
