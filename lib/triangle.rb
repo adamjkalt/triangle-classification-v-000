@@ -8,6 +8,9 @@ def initialize(one, two, three)
   @three = three
 end
 
+def validate_triangle
+end
+
 def kind
   if one == two && two == three
     :equilateral
