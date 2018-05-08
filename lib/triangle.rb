@@ -9,6 +9,7 @@ def initialize(one, two, three)
 end
 
 def validate_triangle
+  real_triangle = [(one + two > three), (one + three > two), (two + three > one)]
 end
 
 def kind
