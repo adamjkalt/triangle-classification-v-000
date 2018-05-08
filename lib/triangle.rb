@@ -8,17 +8,17 @@ def initialize(one, two, three)
   @three = three
 end
 
-def validate_triangle
-  real_triangle = [(one + two > three), (one + three > two), (two + three > one)]
-  [one, two, three].each {|s| real_triangle << false if s <= 0}
-  raise TriangleError if real_triangle.include?(false)
-end
+# def validate_triangle
+#   real_triangle = [(one + two > three), (one + three > two), (two + three > one)]
+#   [one, two, three].each {|s| real_triangle << false if s <= 0}
+#   raise TriangleError if real_triangle.include?(false)
+# end
 
 def kind
   validate_triangle
-  # if self.class != Triangle
-  #       raise TriangleError
-  if one == two && two == three
+  if self.class != Triangle
+        raise TriangleError
+  elsif one == two && two == three
     :equilateral
   elsif one == two || two == three || one == three
     :isosceles
