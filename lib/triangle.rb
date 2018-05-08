@@ -16,7 +16,7 @@ end
 
 def kind
   validate_triangle
-  elsif one == two && two == three
+  if one == two && two == three
     :equilateral
   elsif one == two || two == three || one == three
     :isosceles
